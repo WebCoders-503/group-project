@@ -147,4 +147,15 @@ function showIiii(){
     }
 }
 
+var b;
+function calcMenu(){
+    if(b==1){
+        document.getElementById('benu-box').style.display='none';
+        return b=0;
+    }
+    else{
+        document.getElementById('menu-box').style.display='block';
+        return b=1;
+    }
+}
 
