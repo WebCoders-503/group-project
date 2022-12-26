@@ -32,12 +32,14 @@ a{
   height: 100vh;
   width: 300px;
   position: fixed;
+  top: 0;
+  left:0;
   padding: 50px 0 100px 0;
   text-align: center;
   justify-content: center;
 }
-#menu-box{
-  display: none;
+.side-menu-box{
+  opacity: 0;
 }
 .side-menu-logo{
   background: #000000;
@@ -74,9 +76,10 @@ a{
 }
 .side-menu-footer{
   color: #ebf0f4;
-  margin-top: 230px;
+  margin-top: 200px;
   border-top: 3px solid #2fcf02;
-  padding-top: 10px;
+  border-bottom: 3px solid #2fcf02;
+  padding: 10px 0 0 0;
 }
 
 

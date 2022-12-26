@@ -70,6 +70,9 @@ $(document).ready(function(){
         $('#flight span').addClass('line');
     })
 
+    
+  
+
 
 
 })
@@ -147,15 +150,19 @@ function showIiii(){
     }
 }
 
-var b;
-function calcMenu(){
-    if(b==1){
-        document.getElementById('benu-box').style.display='none';
-        return b=0;
-    }
-    else{
-        document.getElementById('menu-box').style.display='block';
-        return b=1;
-    }
-}
 
+
+
+var card = document.getElementById("card");
+
+		function openRegister(){
+			card.style.transform ="rotateY(-180deg)";
+		}
+		function openLogein(){
+			card.style.transform ="rotateY(0deg)";
+		}
+
+        function sideBox(){
+            document.getElementById('menubox').style.display='block';
+            document.getElementById('menubox').style.opacity='1';
+        }

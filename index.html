@@ -35,7 +35,7 @@
             <header>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2 site-logo"><a class="navbar-brand" href="index.html">WebCoders</a></div>
+                        <div class="col-lg-2 site-logo"><a href="index.html"><img src="img/side-menu-logo-light.png" alt="" class="img-fluid"></a></div>
                         <div class="col-lg-10">
                             <div class="row pt-2 s1-icon">
                                 <div class="col-lg-3"><i class="fa-solid fa-envelope"></i> webcoders@shikbeshobai.com</div>
@@ -61,7 +61,7 @@
                                             <div class="login"><a href="">LogIn</a></div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <div class="singup text-end"><a href="">SingUp</a></div>
+                                            <div class="singup text-end" onclick="singIn()"><a href="#">SingUp</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -470,6 +470,63 @@
     <!-- ******************************************
         *******************************************
                 Footer  Section Code End
+        *******************************************
+    ************************************************* -->
+
+
+
+
+
+
+
+
+    <!-- ******************************************
+        *******************************************
+                Popup  Section Code Start
+        *******************************************
+    ************************************************* -->
+
+    <div class="login-box" id="login-box">
+        <div class="close">
+            <button onclick="document.getElementById('login-box').style.display='none'"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+		<div class="card">
+			<div class="inner-box" id="card">
+				<div class="card-front">
+					<h2>LOGIN</h2>
+					<form>
+						<input type="email" class="input-box" placeholder="YOUR EMAIL ID" required>
+						<input type="password" class="input-box" placeholder="password" required>
+						<button type="submit" class="submit-btn">submit</button>
+						<input type="checkbox"><span>Remember Me</span>
+
+					</form>
+					<button type="button"class="btn" onclick="openRegister()">I'm New Here</button>
+					<a href="">Forget Pasword</a>
+
+				</div>
+				<div class="card-back">
+					<h2>REGISTER</h2>
+					<form>
+						<input type="text" class="input-box" placeholder="Your Name" required>
+						<input type="password" class="input-box" placeholder="password" required>
+						<button type="submit" class="submit-btn">submit</button>
+						<input type="checkbox"><span>Remember Me</span>
+
+					</form>
+					<button type="button"class="btn" onclick="openLogein()">I've an account</button>
+					<a href="">Forget Pasword</a>
+
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+    <!-- ******************************************
+        *******************************************
+                Popup  Section Code End
         *******************************************
     ************************************************* -->
 
