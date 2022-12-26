@@ -109,12 +109,12 @@ function showI(){
 function showIi(){
     if(a==1){
         document.getElementById('accordion-2').style.display='none';
-        document.getElementById('up1').innerHTML='<i class="fa-solid fa-chevron-up"></i>';
+        document.getElementById('up2').innerHTML='<i class="fa-solid fa-chevron-up"></i>';
         return a=0;
     }
     else{
         document.getElementById('accordion-2').style.display='block';
-        document.getElementById('up1').innerHTML='<i class="fa-solid fa-chevron-up"></i>';
+        document.getElementById('up2').innerHTML='<i class="fa-solid fa-chevron-up"></i>';
         return a=1;
     }
 }
@@ -149,6 +149,7 @@ function showIiii(){
         return a=1;
     }
 }
+
 
 
 
