@@ -76,13 +76,14 @@ header .header-line{
 .main-menu ul li a:hover{
 	color: #62e972;
 }
-.login a{
+.login span{
 	padding: 12px 25px;
 	color: #ffffff;
 	position: relative;
 	font-size: 18px;
+	cursor: pointer;
 }
-.login a:hover{
+.login span:hover{
 	color: #62e972;
 }
 
@@ -956,140 +957,148 @@ header .header-line{
         *******************************************
     ************************************************* */
 
-	.login-box{
-		width: 100%;
-		height: 100vh;
-		font-family: sans-serif;
-		background: rgb(187,187,245, 0.6);
-		color: #fff;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	  .login-box{
+		background: rgba(0,0,0, 0.6);
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: 10000;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
 		position: fixed;
-	}
-	.card{
-		width: 350px;
-		height: 500px;
-		box-shadow: 0 0 40px 20px rgb(0, 0, 0, 0.26);
-		perspective: 1000px;
-		background: none;
-	}
-	.inner-box{
-		position: relative;
-		width: 100%;
-		height: 100%;
-		transform-style: preserve-3d;
-		transition: transform 1s;
-	
-	}
-	.card-front,.card-back{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-position: center;
-		background-size: cover;
-		background: linear-gradient(rgb(0, 0, 100, 0.8),rgb(0, 0, 100, 0.8)), url(../img/pic-1.png);
-		padding: 55px;
-		background-repeat: no-repeat;
-		box-sizing: border-box;
-		backface-visibility: hidden;
-	
-	}
-	.card-back{
-		transform: rotateY(180deg);
-	}
-	.card h2{
-		font-weight: normal;
-		font-size: 24px;
-		text-align: center;
-		margin-bottom: 20px;
-	}
-	.input-box{
-		width: 100%;
-		background:transparent;
-		border: 1px solid #fff;
-		margin: 6px 0;
-		height: 32px;
-		border-radius: 20px;
-		padding: 0 10px;
-		box-sizing: border-box;
-		outline: none;
-		text-align: center;
-		color: #fff;
-	
-	}
-	.login-box ::placeholder{
-		color: #ffffff;
-		font-size: 12px;
-	}
-	.login-box button{
-		width: 100%;
-		background:transparent;
-		border: 1px solid #fff;
-		margin:  35px 0 10px;
-		height: 32px;
-		font-size: 12px;
-		border-radius: 20px;
-		padding: 0 10px;
-		box-sizing: border-box;
-		outline: none;
-		color: #fff; 
+		display: none;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .login-title-bar{
+		background: #ffffff;
+		padding: 8px 20px 5px 0;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border: 1px solid #3a0101;
+		width: 800px;
+	  }
+	  .fa-xmark{
+		color: #f00909;
+		font-size: 22px;
 		cursor: pointer;
-	
-	}
-	.submit-btn{
+		margin-left: auto;
+	  }
+	  .ms-auto{
+		margin-right: 450px;
+	  }
+	  .login-card{
+		background: #ffffff;
+		width: 800px;
+		height: 500px;
+		overflow: hidden;
+	  }
+	  
+	  .login-singup-btn{
+		background-color: #ebf0f4;
+		border-top: 5px solid green;
+	  }
+	  .login-singup-btn ul li{
 		position: relative;
-	}
-	.submit-btn:hover{
-		color: #239B02;
-	}
-	.submit-btn::after{
-		content: '\27a4';
-		color: rgb(45, 44, 44);
-		line-height: 32px;
-		font-size: 17px;
-		height: 32px;
-		width:32px ;
-		border-radius:50% ;
-		background: #fff;
+		display: inline-block;		
+	  }
+	  .login-singup-btn ul li span{
+		cursor: pointer;
+		padding: 12px 40px;
+		font-size: 20px;
+		color: green;
+	  }
+	  .login-singup-btn ul .sing-up{
+		background: green;
+		color: #ffffff;
+	  }
+	  .login-singup-btn ul .sing-up:hover{
+		background: rgb(0, 156, 0);
+	  }
+	  .login-singup-btn ul .sing-up::after{
+		content: '';
 		position: absolute;
-		right: -1px;
-		top: -1px;
-	}
-	.login-box span{
-		font-size: 13px;
-		margin-left: 10px;
-	}
-	.card.btn{
-		margin-top: 70px;
-	}
-	.card a{
-		color: #fff;
-		text-decoration: none;
-		display:block;
-		text-align: center;
-		font-size: 13px;
-		margin-top: 8px;
-	}
-	.login-box .btn:hover{
-		color: #239B02 !important;
-	}
-
-	.login-box a:hover{
-		color: #239B02 !important;
-	} 
-	.close button{
+		width: 30%;
+		height: 100%;
+		background: green;
+		top: 0;
+		left: -16px;
+		transform: skewX(30deg);
+	  }
+	  .login-singup-btn ul .sing-up:hover::after,
+	  .login-singup-btn ul .sing-up:hover::before{
+		background: rgb(0, 156, 0);
+	  }
+	  .login-singup-btn ul .sing-up::before{
+		content: '';
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		background: green;
+		top: 0;
+		right: -16px;
+		transform: skewX(30deg);
+	  }
+	  .login-singup-btn ul span{
+		display: block;
+	  }
+	  .login-form{
+		margin-left: 200px;
+		margin-top: 50px;
+	  }
+	  .login-form h5{
+		font-weight: 400;
+	  }
+	  .login-form input,
+	  .singup-form input{
+		width: 300px;
+		background: none;
 		border: none;
-		color: red;
-		font-size: 32px;
-		position: absolute;
-		z-index: 10001;
-		top: 200px;
-		right: -140px;
+		border-bottom: 1px solid green;
+		padding: 0 0 5px 0;
+	  }
+	  .login-form input:focus{
+		outline: none;
+	  }
+	  .login-c button{
+		border: none;
+		background: green;
+		color: #ffffff;
+		padding: 8px 80px;
+		/* border: 2px solid green; */
+	  }
+	  .login-c button:hover{
+		background: rgb(0, 156, 0);
+	  }
+	  .login-form .mb-4 a:hover{
+		color: rgb(195, 1, 1);
+	  }
+	  .not-member span{
+		color: rgb(252, 34, 34);
+		cursor: pointer;
+	  }
+	  .not-member span:hover{
+		color: rgb(221, 3, 3);
+	  }
+	  .singup-form{
+		width: 500px;
+		border: 1px solid green;
+	  }
+	  .singup-f{
+		margin: 30px 150px;
+	  }
+	  .singup-f input{
+		width: 100%;
+		padding-bottom:5px;
+		border: none;
+		border-bottom: 1px solid green;
+		margin: 0;
+	  }
+	  /* .row{
+		--bs-gutter-x:0;
+	  } */
+	  input:focus{
+		outline: none;
 	  }
 
 	/* ******************************************
