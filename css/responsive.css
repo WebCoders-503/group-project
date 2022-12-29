@@ -1,0 +1,19 @@
+@media screen and (max-width: 1400px) {
+    .s1-icon{
+        font-size: 14px;
+    }
+    .site-logo img{
+        width: 130px;
+    }
+    .main-menu ul li a{
+        font-size: 16px;
+    }
+    .login{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .login{
+        margin-left: 0;
+    }
+}
