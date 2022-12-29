@@ -11,6 +11,35 @@
     .login{
         margin-left: 50px;
     }
+
+    .owl-prev{
+  		bottom: 250px;
+  	}
+    .owl-next{
+  		bottom: 310px;
+  	}
+    .banner{
+      height: 90vh;
+    }
+    .banner-1{
+      height: 90vh;
+    }
+    .banner-3{
+      height: 90vh;
+    }
+    .banner-content button{
+  		padding: 10px 35px;
+  		font-size: 18px;
+  	}
+    .banner-content h1{
+      font-size: 40px;
+    }
+    /* .item-bus{
+      margin: 0 80px
+    } */
+    .search-ticket ul li{
+      padding: 10px 0;
+    }
 }
 @media screen and (max-width: 1200px) {
     .login{

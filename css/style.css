@@ -175,7 +175,7 @@ header .header-line{
 		right: 100px;
 		color: #62e972;
 	}
-	
+
 	.banner{
 		background: linear-gradient(to right, rgba(0,0,0, 1),rgba(0,0,0,0.3)), url('../img/banner-1.png');
 		background-position: center;
@@ -242,7 +242,7 @@ header .header-line{
         *******************************************
     *************************************************  */
 
-	
+
 	/* ******************************************
         *******************************************
              Search  Section CSS Code Start
@@ -263,7 +263,7 @@ header .header-line{
 		transform: translateY(-150px);
 		position: relative;
 		z-index: 9999;
-	  
+
 	  }
 	  .search-ticket .search-transport-menu{
 		position: relative;
@@ -278,9 +278,9 @@ header .header-line{
 		border-radius: 10px;
 		margin-bottom: 0;
 		box-shadow: 0 4px 10px rgb(0 117 255 / 15%);
-	  
+
 	  }
-	  
+
 	  .search-ticket ul li{
 		list-style: none;
 		display: inline-block;
@@ -305,13 +305,18 @@ header .header-line{
 		transition: 1s;
 	  }
 	  .transport-item .transport-form{
-		border: 1px solid #939393;
+		border: 1px solid green;
 		width: 22%;
-		border-radius: 8px;
 		padding: 10px 15px;
 		margin: 0 5px;
 		background: transparent;
-	  
+	  }
+	  .transport-item .transport-input{
+		border: 1px solid green;
+		width: 22%;
+		padding: 8px 15px;
+		margin: 0 5px;
+		background: transparent;
 	  }
 	  .item-bus button,
 	  .item-train button,
@@ -328,7 +333,7 @@ header .header-line{
 	  .item-flight button:hover{
 		background: transparent;
 		border: 2px solid green;
-	  
+
 	  }
 	  .search-transport-menu .line{
 		position: absolute;
@@ -343,7 +348,7 @@ header .header-line{
 		color: #000000 !important;
 		font-size: 16px;
 	  }
-	  
+
 
 	/* ******************************************
         *******************************************
@@ -352,7 +357,7 @@ header .header-line{
     *************************************************  */
 	/* ******************************************
         *******************************************
-             Services Section CSS Code Start	
+             Services Section CSS Code Start
         *******************************************
     *************************************************  */
 	  .services{
@@ -415,7 +420,7 @@ header .header-line{
 		border: 2px solid #0e5817;
 		color: #0e5817;
 	}
-	
+
 	/* ******************************************
         *******************************************
             Services  Section CSS Code End
@@ -429,169 +434,169 @@ header .header-line{
     *************************************************  */
 
 
-	
+
 	.footer-block {
 		padding: 60px 0 0;
 		background-repeat: no-repeat;
 		background-position: center center;
 	  }
-	  
+
 	  .yellow-theme .widget .widget-title {
 		color: green !important;
 		border-color: green !important;
 	  }
-	  
+
 	  .yellow-theme .widget .button {
 		background: green !important;
 		color: #ffffff;
 	  }
-	  
+
 	  .yellow-theme .widget.widget_menu ul li:before {
 		background: green !important;
 	  }
-	  
+
 	  .yellow-theme .widget.widget_hot_contact ul li i {
 		color: green !important;
 	  }
-	  
+
 	  .yellow-theme .widget.widget_newsletter .input-group-btn span {
 		color: #ffffff !important;
 	  }
-	  
+
 	  .footer-block.blue-theme .social-profile a:hover {
 		color: #2e93e4;
 	  }
-	  
+
 	  .bg-black {
 		background-color: #ebf0f4;
 	  }
-	  
+
 	  .footer-area.others .footer-content h3 {
 		color: #303C6C;
 	  }
-	  
+
 	  .footer-area.others .footer-content h2 {
 		color: #239B02;
 		font-size: 28px;
 		margin-bottom: 25px;
 	  }
-	  
+
 	  .footer-area.others .footer-content h2 a {
 		position: relative;
 		top: 5px;
 	  }
-	  
+
 	  .footer-area.others .footer-content span a {
 		background-color: #303C6C;
 	  }
-	  
+
 	  .footer-area.others .list-content ul li a {
 		color: #303c6c;
 	  }
-	  
+
 	  .footer-area.four {
 		background-color: #FAFAFA;
 	  }
-	  
+
 	  .footer-block .widget {
 		margin: 30px 0;
 	  }
-	  
+
 	  .footer-bottom-block {
 		color: #6a6b6f;
 		border-top: 1px solid #434343;
 		padding-top: 15px;
 		margin-top: 30px;
 	  }
-	  
+
 	  .footer-bottom-block .copyright {
 		font-size: 14px;
 		font-weight: 500;
 	  }
-	  
+
 	  @media only screen and (max-width: 767px) {
 		.footer-bottom-block .copyright {
 		  margin-bottom: 15px;
 		}
 	  }
-	  
+
 	  .social-profile {
 		float: right;
 	  }
-	  
+
 	  @media only screen and (max-width: 767px) {
 		.social-profile {
 		  float: none;
 		  margin-bottom: 15px;
 		}
 	  }
-	  
+
 	  .social-profile .social-profole-title {
 		color: #cbcaca;
 		margin-right: 5px;
 		font-weight: bold;
 		font-family: "Exo", sans-serif;
 	  }
-	  
+
 	  .social-profile a {
 		padding: 5px;
 	  }
-	  
+
 	  .social-profile a:hover {
 		color: #ffcc00;
 	  }
-	  
+
 	  .footer-top-border .vehicle-multi-border:before {
 		top: -12px;
 	  }
-	
-	
-	
+
+
+
 	  /*--------------------------------------------------------------
 	  # Widgets
 	  --------------------------------------------------------------*/
 	  .widget {
 		overflow: hidden;
 	  }
-	  
+
 	  .widget:last-child {
 		border-bottom: none;
 	  }
-	  
+
 	  .widget select {
 		width: 100%;
 		border: 1px solid #ebebeb;
 		padding: 0.4em 0.8em;
 		outline: none;
 	  }
-	  
+
 	  .widget ul, .widget ol {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	  }
-	  
+
 	  .widget .widget-title-area {
 		position: relative;
 	  }
-	  
+
 	  .widget .widget-title {
 		margin-top: 0;
 	  }
-	  
+
 	  .widget pre {
 		padding: 0.5em;
 	  }
-	  
+
 	  .widget label {
 		margin-bottom: 0;
 		display: inline;
 	  }
-	  
+
 	  .widget option {
 		padding: 0.2em 1em;
 	  }
-	  
+
 	  .widget input[type="text"],
 	  .widget input[type="email"],
 	  .widget input[type="url"],
@@ -600,7 +605,7 @@ header .header-line{
 	  .widget textarea {
 		padding: 0.5em 1em;
 	  }
-	  
+
 	  .widget input[type="text"]:focus,
 	  .widget input[type="email"]:focus,
 	  .widget input[type="url"]:focus,
@@ -610,11 +615,11 @@ header .header-line{
 		-webkit-box-shadow: none !important;
 				box-shadow: none !important;
 	  }
-	  
+
 	  .widget .expand-margin.widget-title {
 		cursor: pointer;
 	  }
-	  
+
 	  .widget .expand-margin.widget-title:after {
 		content: "\f067";
 		font-family: FontAwesome;
@@ -628,23 +633,23 @@ header .header-line{
 		border-radius: 50px;
 		line-height: 28px;
 	  }
-	  
+
 	  .widget .expand-margin.expand.widget-title:after {
 		content: "\f068";
 	  }
-	  
+
 	  .blog-content-right {
 		padding: 30px;
 	  }
-	  
+
 	  .blog-content-right .widget {
 		margin-bottom: 45px;
 	  }
-	  
+
 	  .blog-content-right .widget:last-of-type {
 		margin-bottom: 0;
 	  }
-	  
+
 	  .blog-content-right .widget .widget-title {
 		font-size: 24px;
 		margin-bottom: 25px;
@@ -653,48 +658,48 @@ header .header-line{
 		padding-bottom: 0;
 		color: #ffcc00;
 	  }
-	  
+
 	  @media only screen and (max-width: 992px) {
 		.blog-block .blog-content-right {
 		  margin-bottom: -102px;
 		  margin-top: 30px;
 		}
 	  }
-	  
+
 	  @media only screen and (max-width: 992px) {
 		body.single .blog-content-right {
 		  margin-bottom: -60px;
 		}
 	  }
-	  
+
 	  .footer-area .widget {
 		background: transparent;
 	  }
-	  
+
 	  .yellow-color .button {
 		background-color: #ffcc00;
 	  }
-	  
+
 	  .yellow-color.widget.widget_place_category ul li a {
 		color: #ffcc00;
 	  }
-	  
+
 	  .nevy-color .button {
 		background: #232C3B;
 	  }
-	  
+
 	  .nevy-color.widget.widget_place_category ul li a {
 		color: #232C3B;
 	  }
-	  
+
 	  .widget.apartments_ads {
 		padding: 0;
 	  }
-	  
+
 	  .widget-top {
 		margin-top: 6px;
 	  }
-	  
+
 	  .footer-block .widget .widget-title {
 		font-size: 24px;
 		padding-bottom: 0px;
@@ -704,49 +709,49 @@ header .header-line{
 		padding-left: 15px;
 		letter-spacing: 0.020em;
 	  }
-	  
+
 	  .widget_hot_contact ul li {
 		line-height: 35px;
 	  }
-	  
+
 	  .widget_hot_contact ul li a {
 		color: #000000;
 	  }
-	  
+
 	  .widget_hot_contact ul li i {
 		color: #ffcc00;
 		margin-right: 15px;
 	  }
-	  
+
 	  /*--------------------------------------------------------------
 	  # Widgets Content
 	  --------------------------------------------------------------*/
 	  .widget_rental_search {
 		margin-bottom: 30px;
 	  }
-	  
+
 	  .widget_rental_search .advance_search_query {
 		z-index: 9;
 		position: relative;
 	  }
-	  
+
 	  .widget_rental_search .form-content {
 		display: block;
 	  }
-	  
+
 	  .widget_rental_search .form-content .form-group {
 		display: block;
 	  }
-	  
+
 	  .widget_rental_search .form-content .form-group.small {
 		display: inline-block;
 		width: 45%;
 	  }
-	  
+
 	  .widget_rental_search .form-content .button {
 		float: none;
 	  }
-	  
+
 	  .widget_tagcloud .tagcloud a {
 		border: 1px solid #777777;
 		display: block;
@@ -769,41 +774,41 @@ header .header-line{
 		-webkit-transition: all 0.2s linear 0s;
 		transition: all 0.2s linear 0s;
 	  }
-	  
+
 	  .widget_tagcloud .tagcloud a:hover {
 		color: white;
 		background-color: #ffcc00;
 		border: 1px solid #ffcc00;
 	  }
-	  
+
 	  .widget_popular_posts .post-content {
 		margin-bottom: 20px;
 		border-bottom: 1px solid #4c4c4c;
 		padding-bottom: 20px;
 	  }
-	  
+
 	  .widget_popular_posts .post-content:last-child {
 		border-bottom: 0 none;
 		margin-bottom: 0;
 		padding-bottom: 0;
 	  }
-	  
+
 	  .widget_popular_posts .image-content {
 		margin-right: 15px;
 		float: left;
 		width: 75px;
 		height: 75px;
 	  }
-	  
+
 	  .widget_popular_posts .image-content img {
 		width: 100%;
 		height: 100%;
 	  }
-	  
+
 	  .widget_popular_posts .post-info {
 		display: table-cell;
 	  }
-	  
+
 	  .widget_popular_posts .post-info .widget-post-title {
 		font-size: 18px;
 		margin-top: 0;
@@ -812,19 +817,19 @@ header .header-line{
 		font-weight: bold;
 		font-family: "Exo", sans-serif;
 	  }
-	  
+
 	  .widget_popular_posts .post-info .post-date {
 		font-size: 12px;
 		font-weight: 500;
 		color: #b7b7b7;
 	  }
-	  
+
 	  .widget_categories ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	  }
-	  
+
 	  .widget_categories ul li {
 		color: #fff;
 		line-height: 35px;
@@ -832,36 +837,36 @@ header .header-line{
 		margin-bottom: 20px;
 		font-weight: bold;
 	  }
-	  
+
 	  .widget_categories ul li:last-child {
 		margin-bottom: 0;
 		border-bottom: 0;
 	  }
-	  
+
 	  .widget_categories ul li span {
 		float: right;
 	  }
-	  
+
 	  .widget_categories ul li:hover {
 		color: #3FB476;
 	  }
-	  
+
 	  .widget_advertisement {
 		padding: 0;
 	  }
-	  
+
 	  .widget-about-content img {
 		width: auto;
 		display: block;
 		margin-bottom: 30px;
 	  }
-	  
+
 	  .widget-about-content p {
 		font-size: 16px;
 		color: #3a3a3a;
 		margin-top: 15px;
 	  }
-	  
+
 	  .widget-about-content .button {
 		margin-left: 0;
 		border-radius: 5px;
@@ -869,7 +874,7 @@ header .header-line{
 		display: inline-block;
 		font-size: 16px;
 	  }
-	  
+
 	  .photo-gallery-content li {
 		float: left;
 		width: 105px;
@@ -879,17 +884,17 @@ header .header-line{
 		margin-bottom: 3px;
 		overflow: hidden;
 	  }
-	  
+
 	  .photo-gallery-content li img {
 		width: 100%;
 		height: 100%;
 	  }
-	  
+
 	  .widget.widget_menu ul {
 		margin-left: 35px;
 		margin-top: -8px;
 	  }
-	  
+
 	  .widget.widget_menu ul li {
 		line-height: 45px;
 		position: relative;
@@ -898,11 +903,11 @@ header .header-line{
 		font-weight: 600;
 		letter-spacing: 0.025em;
 	  }
-	  
+
 	  .widget.widget_menu ul li a {
 		color: #ececec;
 	  }
-	  
+
 	  .widget.widget_menu ul li:before {
 		position: absolute;
 		left: -30px;
@@ -912,7 +917,7 @@ header .header-line{
 		content: "";
 		background-color: #ffcc00;
 	  }
-	  
+
 	  .widget_newsletter label {
 		font-size: 16px;
 		font-weight: normal;
@@ -920,11 +925,11 @@ header .header-line{
 		margin-bottom: 15px;
 		display: block;
 	  }
-	  
+
 	  .widget_newsletter .form-controller {
 		background-color: #393939 !important;
 	  }
-	  
+
 	  .widget_newsletter input {
 		border: none;
 		border-radius: 5px 0 0 5px;
@@ -932,7 +937,7 @@ header .header-line{
 		color: #fff;
 		height: 50px;
 	  }
-	  
+
 	  .widget_newsletter .input-group-btn .btn-primary {
 		padding: 17px 14px;
 		background: #393939;
@@ -940,11 +945,11 @@ header .header-line{
 		border: none;
 		height: 50px;
 	  }
-	  
+
 	  .widget_newsletter .input-group-btn span {
 		color: #ffcc00;
 	  }
-	  
+
 	  /* ******************************************
         *******************************************
             Footer  Section CSS Code End
@@ -996,14 +1001,14 @@ header .header-line{
 		height: 500px;
 		overflow: hidden;
 	  }
-	  
+
 	  .login-singup-btn{
 		background-color: #ebf0f4;
 		border-top: 5px solid green;
 	  }
 	  .login-singup-btn ul li{
 		position: relative;
-		display: inline-block;		
+		display: inline-block;
 	  }
 	  .login-singup-btn ul li span{
 		cursor: pointer;
@@ -1109,7 +1114,3 @@ header .header-line{
                 Popup  Section Css Code End
         *******************************************
     ************************************************* */
-
-
-
-	
