@@ -140,6 +140,55 @@ var notMemberSingup = document.getElementById('not-member-singup');
 
 
 
+    $(document).ready(function(){
+
+
+        $('.payment-box').show();
+    
+    
+        $('#bank-a span').addClass('pay-option');
+    
+        $('#bank-a').click(function(){
+    
+    
+            $('.bank-ac').show();
+            $('.mobile-bk').hide();
+    
+    
+            $('#bank-a span').addClass('pay-option');
+            $('#mobile-b span').removeClass('pay-option');
+        })
+    
+        $('#train').click(function(){
+    
+    
+            $('.item-bus').hide();
+            $('.item-train').show();
+            $('.item-flight').hide();
+    
+    
+            $('#bus span').removeClass('line');
+            $('#train span').addClass('line');
+            $('#flight span').removeClass('line');
+        })
+    
+    
+        $('#flight').click(function(){
+    
+    
+            $('.item-bus').hide();
+            $('.item-train').hide();
+            $('.item-flight').show();
+    
+    
+            $('#bus span').removeClass('line');
+            $('#train span').removeClass('line');
+            $('#flight span').addClass('line');
+        })
+    })
+    
+
+
 var a;
 function show(){
     if(a==1){

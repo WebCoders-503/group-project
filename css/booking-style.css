@@ -1021,3 +1021,150 @@ a{
             Biman seat  Section CSS Code End
     *******************************************
     *************************************************  */
+
+
+    /* ******************************************
+    *******************************************
+            Payment  Section CSS Code Start
+    *******************************************
+    *************************************************  */
+
+    .payment-box{
+      background: rgba(0,0,0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      position: fixed;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      }
+      .login-title-bar{
+      background: #ffffff;
+      padding: 8px 20px 5px 0;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border: 1px solid #3a0101;
+      width: 800px;
+      }
+      .fa-xmark{
+      color: #f00909;
+      font-size: 22px;
+      cursor: pointer;
+      margin-right: 80px;
+      }
+      .ms-auto{
+      margin-right: 200px;
+      }
+      .payment-card{
+      background: #ffffff;
+      width: 800px;
+      height: 550px;
+      overflow: hidden;
+      }
+  
+      .bank-mobilebanking-btn{
+      background-color: #ebf0f4;
+      border-top: 5px solid green;
+      }
+      .bank-mobilebanking-btn ul li{
+      position: relative;
+      display: inline-block;
+      }
+      .bank-mobilebanking-btn ul li span{
+      cursor: pointer;
+      padding: 12px 40px;
+      font-size: 20px;
+      color: green;
+      }
+      .bank-mobilebanking-btn ul .pay-option{
+      background: green;
+      color: #ffffff;
+      }
+      .bank-mobilebanking-btn ul .pay-option:hover{
+      background: rgb(0, 156, 0);
+      }
+      .bank-mobilebanking-btn ul .pay-option::after{
+      content: '';
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      background: green;
+      top: 0;
+      left: -16px;
+      transform: skewX(30deg);
+      }
+      .bank-mobilebanking-btn ul .pay-option:hover::after,
+      .bank-mobilebanking-btn ul .pay-option:hover::before{
+      background: rgb(0, 156, 0);
+      }
+      .bank-mobilebanking-btn ul .pay-option::before{
+      content: '';
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      background: green;
+      top: 0;
+      right: -16px;
+      transform: skewX(30deg);
+      }
+      .bank-mobilebanking-btn ul span{
+      display: block;
+      }
+      .login-form{
+      margin-left: 200px;
+      margin-top: 50px;
+      }
+      .login-form h5{
+      font-weight: 400;
+      }
+      .bill-address input,
+      .bill-payment input{
+      width: 100%;
+      background: none;
+      border: none;
+      border: 1px solid green;
+      padding: 6px 10px;
+      }
+      .state{
+        width: 100%;
+        background: transparent;
+        border: none;
+        border: 1px solid green;
+        padding: 8px 10px;
+      }
+      .img-card-1{
+        width:140px;
+        height: 40px;
+        margin-top: 6px;
+      }
+      .img-card-2{
+        width:70px;
+        height:45px;
+        margin-left: 4px;
+      }
+      .card-img{
+        --bs-gutter-x: 0;
+      }
+      .bill-payment button{
+        width: 100%;
+        border: none;
+        background: green;
+        color: #ffffff;
+        padding: 8px 10px;
+        margin-top: 18px;
+      }
+      .bill-payment button:hover{
+        background: rgb(0, 156, 0);
+      }
+
+
+
+    /* ******************************************
+    *******************************************
+            Payment  Section CSS Code End
+    *******************************************
+    *************************************************  */
