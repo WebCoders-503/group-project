@@ -1,0 +1,1 @@
+CREATE TABLE bus_category( ID int AUTO_INCREMENT, B_name varchar(50) NOT null, B_img varchar(255), B_status int DEFAULT 1 COMMENT '0 for Deactive 1 for Active', PRIMARY KEY (ID) ); 
