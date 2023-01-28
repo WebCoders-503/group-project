@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Ticket Management</title>
+
+
+
+    <!-- Owl Carousel Css link -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7cRoboto+Slab:400,700" rel="stylesheet">
+
+    <!-- Font Awsome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css File link -->
+    <link rel="stylesheet" href="css/booking-style.css">
+
+    
+    
+</head>
+
+<body>
+
+    
+
+               
+
+
+    
+
+    <header class="booking-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-start">
+                    <div class="booking-logo">
+                        <a href="index.html">WebCoders</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 transport-service">
+                    <ul><li><img src="img/bus-icon.png" alt="">Bus</li></ul>
+                </div>
+                <div class="col-lg-3 text-end user-profile">
+                    <a href=""><i class="fa-regular fa-circle-user"></i></a>
+                    <a href="" onclick="sideBox()"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="side-menu-box" id="menubox">
+        <div class="close">
+            <button onclick="document.getElementById('menubox').style.display='none'"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="side-menu-logo">
+            <img src="img/side-menu-logo-light.png" alt="">
+            <h1>WebCoders</h1>
+        </div>
+        <div class="side-main-menu text-start">
+            <ul>
+                <li><a href="index.html">-- Home</a></li>
+                <li><a href="">-- About Us</a></li>
+                <li><a href="booking-sit.html">-- Booking</a></li>
+                <li><a href="">-- Contact Us</a></li>
+                <li><a href="">-- Your Profile</a></li>
+                <li><a href="">-- Search Bus</a></li>
+                <li><a href="">-- Search Train</a></li>
+                <li><a href="">-- Search Flight</a></li>
+            </ul>
+        </div>
+        <div class="side-menu-footer">
+            <p>Thanks For Visit WebCoders <i class="fa-solid fa-heart text-danger"></i></p>
+        </div>
+    </div>
+
+
+
+
+    <section class="section-search">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Searching Details <i class="fa fa-arrow-right"></i></h2>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-3">
+                    <div class="travel-from">
+                        <h5>Starting Location </h5>
+                        <input type="text" placeholder="Dhaka">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="travel-from">
+                        <h5>Ending Location </h5>
+                        <input type="text" placeholder="Cox's Bazar">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="travel-from">
+                        <h5>Jurney Date </h5>
+                        <input type="text" placeholder="01-January-2023">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="travel-from">
+                        <h5>Return Date </h5>
+                        <input type="text" placeholder="05-January-2023">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="search-item">
+        <div class="container">
+            <div class="item-title">
+                <p>Today five companys Bus available Dhaka to Cox's Bazar</p>
+            </div>
+            <div class="bus-company">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="col-lg-4"><h2>GreenLine</h2></div>
+                    <div class="col-lg-4 text-center">
+                        <span>Dhaka</span>
+                        <span class="arrow-line"></span>
+                        <span>Cox's Bazar</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bus-details">
+                            <p>Total Bus : 100</p>
+                            <p>Dhaka To Cox's Bazar : 20</p>
+                            <p>Seat Price : 1100 Taka</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="hr-line"></span>
+                
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Starting Point</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Abdullah</option>
+                                <option value="">Panthapat</option>
+                                <option value="">Mohammadpur</option>
+                                <option value="">Jatrabari</option>
+                                <option value="">Mirpur</option>
+                                <option value="">Gulistan</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Starting Time</h5>
+                        <select name="" id="" class="input">
+                                <option value="">8:00 AM</option>
+                                <option value="">10:00 AM</option>
+                                <option value="">6:00 PM</option>
+                                <option value="">8:00 PM</option>
+                                <option value="">10:00 PM</option>
+                                <option value="">11:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Bus Type</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Ac Business</option>
+                                <option value="">Ac Economy</option>
+                                <option value="">Non Ac</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 text-right text-end">
+                        <button id="show" onclick="show();">Booking Ticket <i class="fa-solid fa-chevron-down ms-3"  id="up"></i></button>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="row mt-4 text-center" id="accordion">
+                        <hr>
+                        <h3 class="mb-4">Click a Seat Number and Booked-it<i class="fa fa-arrow-right"></i></h3>
+                       
+                       
+                        <div class="row text-start mb-5">
+                            <div class="col-lg-3 book-from">
+                                <h5>Your Name</h5>
+                                <input type="text" placeholder="Enter Your Full Name">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Nid Number</h5>
+                                <input type="text" placeholder="Enter Your Nid Number">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Phone Number</h5>
+                                <input type="text" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="col-lg-3" book-from>
+                                <h5>Gender</h5>
+                                <select name="" id="" class="input">
+                                    <option value="">Enter Your Gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="col-lg-8 line-x">
+                                <div class="bus-seat">
+                                    <div class="row  m-4 text-center">
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="j-1" onclick='document.getElementById("j-1").innerHTML="✓"'>J1</button>
+                                            <button class="btn-seat mb-4" id="j-2" onclick='document.getElementById("j-2").innerHTML="✓"'>J2</button>
+                                            <button class="btn-seat mb-3" id="j-3" onclick='document.getElementById("j-3").innerHTML="✓"'>J3</button>
+                                            <button class="btn-seat" id="j-4" onclick='document.getElementById("j-4").innerHTML="✓"'>J4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="i-1" onclick='document.getElementById("i-1").innerHTML="✓"'>I1</button>
+                                            <button class="btn-seat mb-4" id="i-2" onclick='document.getElementById("i-2").innerHTML="✓"'>I2</button>
+                                            <button class="btn-seat mb-3" id="i-3" onclick='document.getElementById("i-3").innerHTML="✓"'>I3</button>
+                                            <button class="btn-seat" id="i-4" onclick='document.getElementById("i-4").innerHTML="✓"'>I4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="h-1" onclick='document.getElementById("h-1").innerHTML="✓"'>H1</button>
+                                            <button class="btn-seat mb-4" id="h-2" onclick='document.getElementById("h-2").innerHTML="✓"'>H2</button>
+                                            <button class="btn-seat mb-3" id="h-3" onclick='document.getElementById("h-3").innerHTML="✓"'>H3</button>
+                                            <button class="btn-seat" id="h-4" onclick='document.getElementById("h-4").innerHTML="✓"'>H4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="g-1" onclick='document.getElementById("g-1").innerHTML="✓"'>G1</button>
+                                            <button class="btn-seat mb-4" id="g-2" onclick='document.getElementById("g-2").innerHTML="✓"'>G2</button>
+                                            <button class="btn-seat mb-3" id="g-3" onclick='document.getElementById("g-3").innerHTML="✓"'>G3</button>
+                                            <button class="btn-seat" id="g-4" onclick='document.getElementById("g-4").innerHTML="✓"'>G4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="f-1" onclick='document.getElementById("f-1").innerHTML="✓"'>F1</button>
+                                            <button class="btn-seat mb-4" id="f-2" onclick='document.getElementById("f-2").innerHTML="✓"'>F2</button>
+                                            <button class="btn-seat mb-3" id="f-3" onclick='document.getElementById("f-3").innerHTML="✓"'>F3</button>
+                                            <button class="btn-seat" id="f-4" onclick='document.getElementById("f-4").innerHTML="✓"'>F4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="e-1" onclick='document.getElementById("e-1").innerHTML="✓"'>E1</button>
+                                            <button class="btn-seat mb-4" id="e-2" onclick='document.getElementById("e-2").innerHTML="✓"'>E2</button>
+                                            <button class="btn-seat mb-3" id="e-3" onclick='document.getElementById("e-3").innerHTML="✓"'>E3</button>
+                                            <button class="btn-seat" id="e-4" onclick='document.getElementById("e-4").innerHTML="✓"'>E4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="d-1" onclick='document.getElementById("d-1").innerHTML="✓"'>D1</button>
+                                            <button class="btn-seat mb-4" id="d-2" onclick='document.getElementById("d-2").innerHTML="✓"'>D2</button>
+                                            <button class="btn-seat mb-3" id="d-3" onclick='document.getElementById("d-3").innerHTML="✓"'>D3</button>
+                                            <button class="btn-seat" id="d-4" onclick='document.getElementById("d-4").innerHTML="✓"'>D4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="c-1" onclick='document.getElementById("c-1").innerHTML="✓"'>C1</button>
+                                            <button class="btn-seat mb-4" id="c-2" onclick='document.getElementById("c-2").innerHTML="✓"'>C2</button>
+                                            <button class="btn-seat mb-3" id="c-3" onclick='document.getElementById("c-3").innerHTML="✓"'>C3</button>
+                                            <button class="btn-seat" id="c-4" onclick='document.getElementById("c-4").innerHTML="✓"'>C4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="b-1" onclick='document.getElementById("b-1").innerHTML="✓"'>B1</button>
+                                            <button class="btn-seat mb-4" id="b-2" onclick='document.getElementById("b-2").innerHTML="✓"'>B2</button>
+                                            <button class="btn-seat mb-3" id="b-3" onclick='document.getElementById("b-3").innerHTML="✓"'>B3</button>
+                                            <button class="btn-seat" id="b-4" onclick='document.getElementById("b-4").innerHTML="✓"'>B4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="a-1" onclick='document.getElementById("a-1").innerHTML="✓"'>A1</button>
+                                            <button class="btn-seat mb-4" id="a-2" onclick='document.getElementById("a-2").innerHTML="✓"'>A2</button>
+                                            <button class="btn-seat mb-3" id="a-3" onclick='document.getElementById("a-3").innerHTML="✓"'>A3</button>
+                                            <button class="btn-seat" id="a-4" onclick='document.getElementById("a-4").innerHTML="✓"'>A4</button>
+                                        </div>
+                                        
+                                        <div class="col-lg-2">
+                                            <h4 class="entry">Entry</h4>
+                                            <div class="drive">
+                                                <img src="img/drive.png" alt="">
+                                                <h4>Driver</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-3 seat-check">
+                                <h4 class="text-start">You get this seats<i class="fa fa-arrow-right"></i></h4>
+                                <input type="text">
+                                <button class="mt-5" onclick="location.href='payment.html'">Pay for Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+
+            <div class="bus-company">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="col-lg-4"><h2>Sohagh</h2></div>
+                    <div class="col-lg-4 text-center">
+                        <span>Dhaka</span>
+                        <span class="arrow-line"></span>
+                        <span>Cox's Bazar</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bus-details">
+                            <p>Total Bus : 100</p>
+                            <p>Dhaka To Cox's Bazar : 20</p>
+                            <p>Seat Price : 1100 Taka</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="hr-line"></span>
+                
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Starting Point</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Abdullah</option>
+                                <option value="">Panthapat</option>
+                                <option value="">Mohammadpur</option>
+                                <option value="">Jatrabari</option>
+                                <option value="">Mirpur</option>
+                                <option value="">Gulistan</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Starting Time</h5>
+                        <select name="" id="" class="input">
+                                <option value="">8:00 AM</option>
+                                <option value="">10:00 AM</option>
+                                <option value="">6:00 PM</option>
+                                <option value="">8:00 PM</option>
+                                <option value="">10:00 PM</option>
+                                <option value="">11:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Bus Type</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Ac Business</option>
+                                <option value="">Ac Economy</option>
+                                <option value="">Non Ac</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 text-right text-end">
+                        <button id="show" onclick="showI();">Booking Ticket <i class="fa-solid fa-chevron-down ms-3"  id="up1"></i></button>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="row mt-4 text-center" id="accordion-1">
+                        <hr>
+                        <h3 class="mb-4">Click a Seat Number and Booked-it<i class="fa fa-arrow-right"></i></h3>
+                       
+                       
+                        <div class="row text-start mb-5">
+                            <div class="col-lg-3 book-from">
+                                <h5>Your Name</h5>
+                                <input type="text" placeholder="Enter Your Full Name">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Nid Number</h5>
+                                <input type="text" placeholder="Enter Your Nid Number">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Phone Number</h5>
+                                <input type="text" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="col-lg-3" book-from>
+                                <h5>Gender</h5>
+                                <select name="" id="" class="input">
+                                    <option value="">Enter Your Gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="col-lg-8 line-x">
+                                <div class="bus-seat">
+                                    <div class="row  m-4 text-center">
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="j-11" onclick='document.getElementById("j-11").innerHTML="✓"'>J1</button>
+                                            <button class="btn-seat mb-4" id="j-22" onclick='document.getElementById("j-22").innerHTML="✓"'>J2</button>
+                                            <button class="btn-seat mb-3" id="j-33" onclick='document.getElementById("j-33").innerHTML="✓"'>J3</button>
+                                            <button class="btn-seat" id="j-44" onclick='document.getElementById("j-44").innerHTML="✓"'>J4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="i-11" onclick='document.getElementById("i-11").innerHTML="✓"'>I1</button>
+                                            <button class="btn-seat mb-4" id="i-22" onclick='document.getElementById("i-22").innerHTML="✓"'>I2</button>
+                                            <button class="btn-seat mb-3" id="i-33" onclick='document.getElementById("i-33").innerHTML="✓"'>I3</button>
+                                            <button class="btn-seat" id="i-44" onclick='document.getElementById("i-44").innerHTML="✓"'>I4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="h-11" onclick='document.getElementById("h-11").innerHTML="✓"'>H1</button>
+                                            <button class="btn-seat mb-4" id="h-22" onclick='document.getElementById("h-22").innerHTML="✓"'>H2</button>
+                                            <button class="btn-seat mb-3" id="h-33" onclick='document.getElementById("h-33").innerHTML="✓"'>H3</button>
+                                            <button class="btn-seat" id="h-44" onclick='document.getElementById("h-44").innerHTML="✓"'>H4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="g-11" onclick='document.getElementById("g-11").innerHTML="✓"'>G1</button>
+                                            <button class="btn-seat mb-4" id="g-22" onclick='document.getElementById("g-22").innerHTML="✓"'>G2</button>
+                                            <button class="btn-seat mb-3" id="g-33" onclick='document.getElementById("g-33").innerHTML="✓"'>G3</button>
+                                            <button class="btn-seat" id="g-44" onclick='document.getElementById("g-44").innerHTML="✓"'>G4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="f-11" onclick='document.getElementById("f-11").innerHTML="✓"'>F1</button>
+                                            <button class="btn-seat mb-4" id="f-22" onclick='document.getElementById("f-22").innerHTML="✓"'>F2</button>
+                                            <button class="btn-seat mb-3" id="f-33" onclick='document.getElementById("f-33").innerHTML="✓"'>F3</button>
+                                            <button class="btn-seat" id="f-44" onclick='document.getElementById("f-44").innerHTML="✓"'>F4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="e-11" onclick='document.getElementById("e-11").innerHTML="✓"'>E1</button>
+                                            <button class="btn-seat mb-4" id="e-22" onclick='document.getElementById("e-22").innerHTML="✓"'>E2</button>
+                                            <button class="btn-seat mb-3" id="e-33" onclick='document.getElementById("e-33").innerHTML="✓"'>E3</button>
+                                            <button class="btn-seat" id="e-44" onclick='document.getElementById("e-44").innerHTML="✓"'>E4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="d-11" onclick='document.getElementById("d-11").innerHTML="✓"'>D1</button>
+                                            <button class="btn-seat mb-4" id="d-22" onclick='document.getElementById("d-22").innerHTML="✓"'>D2</button>
+                                            <button class="btn-seat mb-3" id="d-33" onclick='document.getElementById("d-33").innerHTML="✓"'>D3</button>
+                                            <button class="btn-seat" id="d-44" onclick='document.getElementById("d-44").innerHTML="✓"'>D4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="c-11" onclick='document.getElementById("c-11").innerHTML="✓"'>C1</button>
+                                            <button class="btn-seat mb-4" id="c-22" onclick='document.getElementById("c-22").innerHTML="✓"'>C2</button>
+                                            <button class="btn-seat mb-3" id="c-33" onclick='document.getElementById("c-33").innerHTML="✓"'>C3</button>
+                                            <button class="btn-seat" id="c-44" onclick='document.getElementById("c-44").innerHTML="✓"'>C4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="b-11" onclick='document.getElementById("b-11").innerHTML="✓"'>B1</button>
+                                            <button class="btn-seat mb-4" id="b-22" onclick='document.getElementById("b-22").innerHTML="✓"'>B2</button>
+                                            <button class="btn-seat mb-3" id="b-33" onclick='document.getElementById("b-33").innerHTML="✓"'>B3</button>
+                                            <button class="btn-seat" id="b-44" onclick='document.getElementById("b-44").innerHTML="✓"'>B4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="a-11" onclick='document.getElementById("a-11").innerHTML="✓"'>A1</button>
+                                            <button class="btn-seat mb-4" id="a-22" onclick='document.getElementById("a-22").innerHTML="✓"'>A2</button>
+                                            <button class="btn-seat mb-3" id="a-33" onclick='document.getElementById("a-33").innerHTML="✓"'>A3</button>
+                                            <button class="btn-seat" id="a-44" onclick='document.getElementById("a-44").innerHTML="✓"'>A4</button>
+                                        </div>
+                                        
+                                        <div class="col-lg-2">
+                                            <h4 class="entry">Entry</h4>
+                                            <div class="drive">
+                                                <img src="img/drive.png" alt="">
+                                                <h4>Driver</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-3 seat-check">
+                                <h4 class="text-start">You get this seats<i class="fa fa-arrow-right"></i></h4>
+                                <input type="text">
+                                <button class="mt-5" onclick="location.href='payment.html'">Pay for Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bus-company">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="col-lg-4"><h2>Hanif</h2></div>
+                    <div class="col-lg-4 text-center">
+                        <span>Dhaka</span>
+                        <span class="arrow-line"></span>
+                        <span>Cox's Bazar</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bus-details">
+                            <p>Total Bus : 100</p>
+                            <p>Dhaka To Cox's Bazar : 20</p>
+                            <p>Seat Price : 1100 Taka</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="hr-line"></span>
+                
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Starting Point</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Abdullah</option>
+                                <option value="">Panthapat</option>
+                                <option value="">Mohammadpur</option>
+                                <option value="">Jatrabari</option>
+                                <option value="">Mirpur</option>
+                                <option value="">Gulistan</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Starting Time</h5>
+                        <select name="" id="" class="input">
+                                <option value="">8:00 AM</option>
+                                <option value="">10:00 AM</option>
+                                <option value="">6:00 PM</option>
+                                <option value="">8:00 PM</option>
+                                <option value="">10:00 PM</option>
+                                <option value="">11:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Bus Type</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Ac Business</option>
+                                <option value="">Ac Economy</option>
+                                <option value="">Non Ac</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 text-right text-end">
+                        <button id="show" onclick="showIi();">Booking Ticket <i class="fa-solid fa-chevron-down ms-3"  id="up1"></i></button>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="row mt-4 text-center" id="accordion-2">
+                        <hr>
+                        <h3 class="mb-4">Click a Seat Number and Booked-it<i class="fa fa-arrow-right"></i></h3>
+                       
+                       
+                        <div class="row text-start mb-5">
+                            <div class="col-lg-3 book-from">
+                                <h5>Your Name</h5>
+                                <input type="text" placeholder="Enter Your Full Name">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Nid Number</h5>
+                                <input type="text" placeholder="Enter Your Nid Number">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Phone Number</h5>
+                                <input type="text" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="col-lg-3" book-from>
+                                <h5>Gender</h5>
+                                <select name="" id="" class="input">
+                                    <option value="">Enter Your Gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="col-lg-8 line-x">
+                                <div class="bus-seat">
+                                    <div class="row  m-4 text-center">
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="j-11" onclick='document.getElementById("j-11").innerHTML="✓"'>J1</button>
+                                            <button class="btn-seat mb-4" id="j-22" onclick='document.getElementById("j-22").innerHTML="✓"'>J2</button>
+                                            <button class="btn-seat mb-3" id="j-33" onclick='document.getElementById("j-33").innerHTML="✓"'>J3</button>
+                                            <button class="btn-seat" id="j-44" onclick='document.getElementById("j-44").innerHTML="✓"'>J4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="i-11" onclick='document.getElementById("i-11").innerHTML="✓"'>I1</button>
+                                            <button class="btn-seat mb-4" id="i-22" onclick='document.getElementById("i-22").innerHTML="✓"'>I2</button>
+                                            <button class="btn-seat mb-3" id="i-33" onclick='document.getElementById("i-33").innerHTML="✓"'>I3</button>
+                                            <button class="btn-seat" id="i-44" onclick='document.getElementById("i-44").innerHTML="✓"'>I4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="h-11" onclick='document.getElementById("h-11").innerHTML="✓"'>H1</button>
+                                            <button class="btn-seat mb-4" id="h-22" onclick='document.getElementById("h-22").innerHTML="✓"'>H2</button>
+                                            <button class="btn-seat mb-3" id="h-33" onclick='document.getElementById("h-33").innerHTML="✓"'>H3</button>
+                                            <button class="btn-seat" id="h-44" onclick='document.getElementById("h-44").innerHTML="✓"'>H4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="g-11" onclick='document.getElementById("g-11").innerHTML="✓"'>G1</button>
+                                            <button class="btn-seat mb-4" id="g-22" onclick='document.getElementById("g-22").innerHTML="✓"'>G2</button>
+                                            <button class="btn-seat mb-3" id="g-33" onclick='document.getElementById("g-33").innerHTML="✓"'>G3</button>
+                                            <button class="btn-seat" id="g-44" onclick='document.getElementById("g-44").innerHTML="✓"'>G4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="f-11" onclick='document.getElementById("f-11").innerHTML="✓"'>F1</button>
+                                            <button class="btn-seat mb-4" id="f-22" onclick='document.getElementById("f-22").innerHTML="✓"'>F2</button>
+                                            <button class="btn-seat mb-3" id="f-33" onclick='document.getElementById("f-33").innerHTML="✓"'>F3</button>
+                                            <button class="btn-seat" id="f-44" onclick='document.getElementById("f-44").innerHTML="✓"'>F4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="e-11" onclick='document.getElementById("e-11").innerHTML="✓"'>E1</button>
+                                            <button class="btn-seat mb-4" id="e-22" onclick='document.getElementById("e-22").innerHTML="✓"'>E2</button>
+                                            <button class="btn-seat mb-3" id="e-33" onclick='document.getElementById("e-33").innerHTML="✓"'>E3</button>
+                                            <button class="btn-seat" id="e-44" onclick='document.getElementById("e-44").innerHTML="✓"'>E4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="d-11" onclick='document.getElementById("d-11").innerHTML="✓"'>D1</button>
+                                            <button class="btn-seat mb-4" id="d-22" onclick='document.getElementById("d-22").innerHTML="✓"'>D2</button>
+                                            <button class="btn-seat mb-3" id="d-33" onclick='document.getElementById("d-33").innerHTML="✓"'>D3</button>
+                                            <button class="btn-seat" id="d-44" onclick='document.getElementById("d-44").innerHTML="✓"'>D4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="c-11" onclick='document.getElementById("c-11").innerHTML="✓"'>C1</button>
+                                            <button class="btn-seat mb-4" id="c-22" onclick='document.getElementById("c-22").innerHTML="✓"'>C2</button>
+                                            <button class="btn-seat mb-3" id="c-33" onclick='document.getElementById("c-33").innerHTML="✓"'>C3</button>
+                                            <button class="btn-seat" id="c-44" onclick='document.getElementById("c-44").innerHTML="✓"'>C4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="b-11" onclick='document.getElementById("b-11").innerHTML="✓"'>B1</button>
+                                            <button class="btn-seat mb-4" id="b-22" onclick='document.getElementById("b-22").innerHTML="✓"'>B2</button>
+                                            <button class="btn-seat mb-3" id="b-33" onclick='document.getElementById("b-33").innerHTML="✓"'>B3</button>
+                                            <button class="btn-seat" id="b-44" onclick='document.getElementById("b-44").innerHTML="✓"'>B4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="a-11" onclick='document.getElementById("a-11").innerHTML="✓"'>A1</button>
+                                            <button class="btn-seat mb-4" id="a-22" onclick='document.getElementById("a-22").innerHTML="✓"'>A2</button>
+                                            <button class="btn-seat mb-3" id="a-33" onclick='document.getElementById("a-33").innerHTML="✓"'>A3</button>
+                                            <button class="btn-seat" id="a-44" onclick='document.getElementById("a-44").innerHTML="✓"'>A4</button>
+                                        </div>
+                                        
+                                        <div class="col-lg-2">
+                                            <h4 class="entry">Entry</h4>
+                                            <div class="drive">
+                                                <img src="img/drive.png" alt="">
+                                                <h4>Driver</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-3 seat-check">
+                                <h4 class="text-start">You get this seats<i class="fa fa-arrow-right"></i></h4>
+                                <input type="text">
+                                <button class="mt-5" onclick="location.href='payment.html'">Pay for Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bus-company">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="col-lg-4"><h2>Shyamoli</h2></div>
+                    <div class="col-lg-4 text-center">
+                        <span>Dhaka</span>
+                        <span class="arrow-line"></span>
+                        <span>Cox's Bazar</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bus-details">
+                            <p>Total Bus : 100</p>
+                            <p>Dhaka To Cox's Bazar : 20</p>
+                            <p>Seat Price : 1100 Taka</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="hr-line"></span>
+                
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Starting Point</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Abdullah</option>
+                                <option value="">Panthapat</option>
+                                <option value="">Mohammadpur</option>
+                                <option value="">Jatrabari</option>
+                                <option value="">Mirpur</option>
+                                <option value="">Gulistan</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Starting Time</h5>
+                        <select name="" id="" class="input">
+                                <option value="">8:00 AM</option>
+                                <option value="">10:00 AM</option>
+                                <option value="">6:00 PM</option>
+                                <option value="">8:00 PM</option>
+                                <option value="">10:00 PM</option>
+                                <option value="">11:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Bus Type</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Ac Business</option>
+                                <option value="">Ac Economy</option>
+                                <option value="">Non Ac</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 text-right text-end">
+                        <button id="show" onclick="showIii();">Booking Ticket <i class="fa-solid fa-chevron-down ms-3"  id="up1"></i></button>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="row mt-4 text-center" id="accordion-3">
+                        <hr>
+                        <h3 class="mb-4">Click a Seat Number and Booked-it<i class="fa fa-arrow-right"></i></h3>
+                       
+                       
+                        <div class="row text-start mb-5">
+                            <div class="col-lg-3 book-from">
+                                <h5>Your Name</h5>
+                                <input type="text" placeholder="Enter Your Full Name">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Nid Number</h5>
+                                <input type="text" placeholder="Enter Your Nid Number">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Phone Number</h5>
+                                <input type="text" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="col-lg-3" book-from>
+                                <h5>Gender</h5>
+                                <select name="" id="" class="input">
+                                    <option value="">Enter Your Gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="col-lg-8 line-x">
+                                <div class="bus-seat">
+                                    <div class="row  m-4 text-center">
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="j-11" onclick='document.getElementById("j-11").innerHTML="✓"'>J1</button>
+                                            <button class="btn-seat mb-4" id="j-22" onclick='document.getElementById("j-22").innerHTML="✓"'>J2</button>
+                                            <button class="btn-seat mb-3" id="j-33" onclick='document.getElementById("j-33").innerHTML="✓"'>J3</button>
+                                            <button class="btn-seat" id="j-44" onclick='document.getElementById("j-44").innerHTML="✓"'>J4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="i-11" onclick='document.getElementById("i-11").innerHTML="✓"'>I1</button>
+                                            <button class="btn-seat mb-4" id="i-22" onclick='document.getElementById("i-22").innerHTML="✓"'>I2</button>
+                                            <button class="btn-seat mb-3" id="i-33" onclick='document.getElementById("i-33").innerHTML="✓"'>I3</button>
+                                            <button class="btn-seat" id="i-44" onclick='document.getElementById("i-44").innerHTML="✓"'>I4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="h-11" onclick='document.getElementById("h-11").innerHTML="✓"'>H1</button>
+                                            <button class="btn-seat mb-4" id="h-22" onclick='document.getElementById("h-22").innerHTML="✓"'>H2</button>
+                                            <button class="btn-seat mb-3" id="h-33" onclick='document.getElementById("h-33").innerHTML="✓"'>H3</button>
+                                            <button class="btn-seat" id="h-44" onclick='document.getElementById("h-44").innerHTML="✓"'>H4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="g-11" onclick='document.getElementById("g-11").innerHTML="✓"'>G1</button>
+                                            <button class="btn-seat mb-4" id="g-22" onclick='document.getElementById("g-22").innerHTML="✓"'>G2</button>
+                                            <button class="btn-seat mb-3" id="g-33" onclick='document.getElementById("g-33").innerHTML="✓"'>G3</button>
+                                            <button class="btn-seat" id="g-44" onclick='document.getElementById("g-44").innerHTML="✓"'>G4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="f-11" onclick='document.getElementById("f-11").innerHTML="✓"'>F1</button>
+                                            <button class="btn-seat mb-4" id="f-22" onclick='document.getElementById("f-22").innerHTML="✓"'>F2</button>
+                                            <button class="btn-seat mb-3" id="f-33" onclick='document.getElementById("f-33").innerHTML="✓"'>F3</button>
+                                            <button class="btn-seat" id="f-44" onclick='document.getElementById("f-44").innerHTML="✓"'>F4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="e-11" onclick='document.getElementById("e-11").innerHTML="✓"'>E1</button>
+                                            <button class="btn-seat mb-4" id="e-22" onclick='document.getElementById("e-22").innerHTML="✓"'>E2</button>
+                                            <button class="btn-seat mb-3" id="e-33" onclick='document.getElementById("e-33").innerHTML="✓"'>E3</button>
+                                            <button class="btn-seat" id="e-44" onclick='document.getElementById("e-44").innerHTML="✓"'>E4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="d-11" onclick='document.getElementById("d-11").innerHTML="✓"'>D1</button>
+                                            <button class="btn-seat mb-4" id="d-22" onclick='document.getElementById("d-22").innerHTML="✓"'>D2</button>
+                                            <button class="btn-seat mb-3" id="d-33" onclick='document.getElementById("d-33").innerHTML="✓"'>D3</button>
+                                            <button class="btn-seat" id="d-44" onclick='document.getElementById("d-44").innerHTML="✓"'>D4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="c-11" onclick='document.getElementById("c-11").innerHTML="✓"'>C1</button>
+                                            <button class="btn-seat mb-4" id="c-22" onclick='document.getElementById("c-22").innerHTML="✓"'>C2</button>
+                                            <button class="btn-seat mb-3" id="c-33" onclick='document.getElementById("c-33").innerHTML="✓"'>C3</button>
+                                            <button class="btn-seat" id="c-44" onclick='document.getElementById("c-44").innerHTML="✓"'>C4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="b-11" onclick='document.getElementById("b-11").innerHTML="✓"'>B1</button>
+                                            <button class="btn-seat mb-4" id="b-22" onclick='document.getElementById("b-22").innerHTML="✓"'>B2</button>
+                                            <button class="btn-seat mb-3" id="b-33" onclick='document.getElementById("b-33").innerHTML="✓"'>B3</button>
+                                            <button class="btn-seat" id="b-44" onclick='document.getElementById("b-44").innerHTML="✓"'>B4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="a-11" onclick='document.getElementById("a-11").innerHTML="✓"'>A1</button>
+                                            <button class="btn-seat mb-4" id="a-22" onclick='document.getElementById("a-22").innerHTML="✓"'>A2</button>
+                                            <button class="btn-seat mb-3" id="a-33" onclick='document.getElementById("a-33").innerHTML="✓"'>A3</button>
+                                            <button class="btn-seat" id="a-44" onclick='document.getElementById("a-44").innerHTML="✓"'>A4</button>
+                                        </div>
+                                        
+                                        <div class="col-lg-2">
+                                            <h4 class="entry">Entry</h4>
+                                            <div class="drive">
+                                                <img src="img/drive.png" alt="">
+                                                <h4>Driver</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-3 seat-check">
+                                <h4 class="text-start">You get this seats<i class="fa fa-arrow-right"></i></h4>
+                                <input type="text">
+                                <button class="mt-5" onclick="location.href='payment.html'">Pay for Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bus-company">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="col-lg-4"><h2>RoyalCoach</h2></div>
+                    <div class="col-lg-4 text-center">
+                        <span>Dhaka</span>
+                        <span class="arrow-line"></span>
+                        <span>Cox's Bazar</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bus-details">
+                            <p>Total Bus : 100</p>
+                            <p>Dhaka To Cox's Bazar : 20</p>
+                            <p>Seat Price : 1100 Taka</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="hr-line"></span>
+                
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Starting Point</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Abdullah</option>
+                                <option value="">Panthapat</option>
+                                <option value="">Mohammadpur</option>
+                                <option value="">Jatrabari</option>
+                                <option value="">Mirpur</option>
+                                <option value="">Gulistan</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Starting Time</h5>
+                        <select name="" id="" class="input">
+                                <option value="">8:00 AM</option>
+                                <option value="">10:00 AM</option>
+                                <option value="">6:00 PM</option>
+                                <option value="">8:00 PM</option>
+                                <option value="">10:00 PM</option>
+                                <option value="">11:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Bus Type</h5>
+                        <select name="" id="" class="input">
+                                <option value="">Ac Business</option>
+                                <option value="">Ac Economy</option>
+                                <option value="">Non Ac</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 text-right text-end">
+                        <button id="show" onclick="showIiii();">Booking Ticket <i class="fa-solid fa-chevron-down ms-3"  id="up1"></i></button>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="row mt-4 text-center" id="accordion-4">
+                        <hr>
+                        <h3 class="mb-4">Click Your Seat Number and Booked-it<i class="fa fa-arrow-right"></i></h3>
+                       
+                       
+                        <div class="row text-start mb-5">
+                            <div class="col-lg-3 book-from">
+                                <h5>Your Name</h5>
+                                <input type="text" placeholder="Enter Your Full Name">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Nid Number</h5>
+                                <input type="text" placeholder="Enter Your Nid Number">
+                            </div>
+                            <div class="col-lg-3 book-from">
+                                <h5>Phone Number</h5>
+                                <input type="text" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="col-lg-3" book-from>
+                                <h5>Gender</h5>
+                                <select name="" id="" class="input">
+                                    <option value="">Enter Your Gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="col-lg-8 line-x">
+                                <div class="bus-seat">
+                                    <div class="row  m-4 text-center">
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="j-11" onclick='document.getElementById("j-11").innerHTML="✓"'>J1</button>
+                                            <button class="btn-seat mb-4" id="j-22" onclick='document.getElementById("j-22").innerHTML="✓"'>J2</button>
+                                            <button class="btn-seat mb-3" id="j-33" onclick='document.getElementById("j-33").innerHTML="✓"'>J3</button>
+                                            <button class="btn-seat" id="j-44" onclick='document.getElementById("j-44").innerHTML="✓"'>J4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="i-11" onclick='document.getElementById("i-11").innerHTML="✓"'>I1</button>
+                                            <button class="btn-seat mb-4" id="i-22" onclick='document.getElementById("i-22").innerHTML="✓"'>I2</button>
+                                            <button class="btn-seat mb-3" id="i-33" onclick='document.getElementById("i-33").innerHTML="✓"'>I3</button>
+                                            <button class="btn-seat" id="i-44" onclick='document.getElementById("i-44").innerHTML="✓"'>I4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="h-11" onclick='document.getElementById("h-11").innerHTML="✓"'>H1</button>
+                                            <button class="btn-seat mb-4" id="h-22" onclick='document.getElementById("h-22").innerHTML="✓"'>H2</button>
+                                            <button class="btn-seat mb-3" id="h-33" onclick='document.getElementById("h-33").innerHTML="✓"'>H3</button>
+                                            <button class="btn-seat" id="h-44" onclick='document.getElementById("h-44").innerHTML="✓"'>H4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="g-11" onclick='document.getElementById("g-11").innerHTML="✓"'>G1</button>
+                                            <button class="btn-seat mb-4" id="g-22" onclick='document.getElementById("g-22").innerHTML="✓"'>G2</button>
+                                            <button class="btn-seat mb-3" id="g-33" onclick='document.getElementById("g-33").innerHTML="✓"'>G3</button>
+                                            <button class="btn-seat" id="g-44" onclick='document.getElementById("g-44").innerHTML="✓"'>G4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="f-11" onclick='document.getElementById("f-11").innerHTML="✓"'>F1</button>
+                                            <button class="btn-seat mb-4" id="f-22" onclick='document.getElementById("f-22").innerHTML="✓"'>F2</button>
+                                            <button class="btn-seat mb-3" id="f-33" onclick='document.getElementById("f-33").innerHTML="✓"'>F3</button>
+                                            <button class="btn-seat" id="f-44" onclick='document.getElementById("f-44").innerHTML="✓"'>F4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="e-11" onclick='document.getElementById("e-11").innerHTML="✓"'>E1</button>
+                                            <button class="btn-seat mb-4" id="e-22" onclick='document.getElementById("e-22").innerHTML="✓"'>E2</button>
+                                            <button class="btn-seat mb-3" id="e-33" onclick='document.getElementById("e-33").innerHTML="✓"'>E3</button>
+                                            <button class="btn-seat" id="e-44" onclick='document.getElementById("e-44").innerHTML="✓"'>E4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="d-11" onclick='document.getElementById("d-11").innerHTML="✓"'>D1</button>
+                                            <button class="btn-seat mb-4" id="d-22" onclick='document.getElementById("d-22").innerHTML="✓"'>D2</button>
+                                            <button class="btn-seat mb-3" id="d-33" onclick='document.getElementById("d-33").innerHTML="✓"'>D3</button>
+                                            <button class="btn-seat" id="d-44" onclick='document.getElementById("d-44").innerHTML="✓"'>D4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="c-11" onclick='document.getElementById("c-11").innerHTML="✓"'>C1</button>
+                                            <button class="btn-seat mb-4" id="c-22" onclick='document.getElementById("c-22").innerHTML="✓"'>C2</button>
+                                            <button class="btn-seat mb-3" id="c-33" onclick='document.getElementById("c-33").innerHTML="✓"'>C3</button>
+                                            <button class="btn-seat" id="c-44" onclick='document.getElementById("c-44").innerHTML="✓"'>C4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="b-11" onclick='document.getElementById("b-11").innerHTML="✓"'>B1</button>
+                                            <button class="btn-seat mb-4" id="b-22" onclick='document.getElementById("b-22").innerHTML="✓"'>B2</button>
+                                            <button class="btn-seat mb-3" id="b-33" onclick='document.getElementById("b-33").innerHTML="✓"'>B3</button>
+                                            <button class="btn-seat" id="b-44" onclick='document.getElementById("b-44").innerHTML="✓"'>B4</button>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn-seat mb-3" id="a-11" onclick='document.getElementById("a-11").innerHTML="✓"'>A1</button>
+                                            <button class="btn-seat mb-4" id="a-22" onclick='document.getElementById("a-22").innerHTML="✓"'>A2</button>
+                                            <button class="btn-seat mb-3" id="a-33" onclick='document.getElementById("a-33").innerHTML="✓"'>A3</button>
+                                            <button class="btn-seat" id="a-44" onclick='document.getElementById("a-44").innerHTML="✓"'>A4</button>
+                                        </div>
+                                        
+                                        <div class="col-lg-2">
+                                            <h4 class="entry">Entry</h4>
+                                            <div class="drive">
+                                                <img src="img/drive.png" alt="">
+                                                <h4>Driver</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-3 seat-check">
+                                <h4 class="text-start">You get this seats<i class="fa fa-arrow-right"></i></h4>
+                                <input type="text">
+                                <button class="mt-5" onclick="location.href='payment.html'">Pay for Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-block bg-black" style="background-image: url(images/footer-bg.png);">
+        <div class="container">
+            <!-- footer-top-block -->
+            <div class="footer-top-block yellow-theme">            
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_about">    
+                            <h3 class="widget-title">
+                                About us 
+                            </h3><!-- /.widget-title -->
+                            <div class="widget-about-content">
+                                <div class="booking-logo">
+                                   <a href="index.html">WebCoders</a>
+                                </div>
+                                <p>We Provide Premium Word Press, Ghost and HTML template. Our Prem tjium Templates is, develo gped in a way so that the clients find  Support. Themes are developed in a way so that  the clients find.</p>
+                                <a href="#" class="button">More</a>
+                            </div><!-- /.widget-content -->
+                        </div><!-- /.widget widget_about -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-2 col-sm-6">
+                        <div class="widget widget_menu">
+                            <h3 class="widget-title">
+                                Useful link
+                            </h3><!-- /.widget-title -->
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#"> Get a cab</a></li>
+                                <li><a href="#">Our car</a></li>
+                                <li><a href="#">contact page</a></li>
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#"> Booking</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_hot_contact">
+                            <h3 class="widget-title">
+                                Hot contact 
+                            </h3><!-- /.widget-title -->
+                            <ul>
+                                <li><a href="#"><i class="fa fa-envelope"></i>softhopper@gmail.com</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>(+880)023985471</a></li>
+                                <li><a href="#"><i class="fa fa-map-marker"></i>Road 8A, 112/B, Dhanmondi</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                        <div class="widget widget_newsletter">
+                            <h3 class="widget-title">Subscribe</h3>
+                            <form action="#" class="subscribes-newsletter" method="get">
+                                <label>Subscribe to our Newsletters</label>
+                                <div class="input-group">
+                                    <input type="search" name="s" placeholder="Your email" class="form-controller">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary">
+                                                <span class="fa fa-paper-plane"></span>
+                                        </button>
+                                    </span>
+                                </div><!-- /. input-group -->
+                            </form><!-- /.subscribes-newsletter -->
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_photo_gallery">
+                            <h3 class="widget-title">
+                                Photo Gallery  
+                            </h3><!-- /.widget-title -->
+                            <ul class="photo-gallery-content">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-01.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-02.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-03.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-04.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-05.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-06.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-07.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-08.png" alt="instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram/instagram-09.png" alt="instagram" />
+                                    </a>
+                                </li>
+                            </ul><!-- /.instagram-image-content -->
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.footer-top-block -->
+
+            <!-- footer-bottom-block -->
+            <div class="footer-bottom-block">            
+                <div class="row">
+                     <div class="col-md-9">
+                        <div class="bottom-content-left">
+                            <p class="copyright">Copyright &copy; 2022 WebCoders  -  All Right Reserved <a href="#">shakibulislam.com</a></p>
+                        </div><!-- /.bottom-top-content -->
+                     </div><!-- /.col-md-9 -->
+                     <div class="col-md-3">
+                        <div class="bottom-content-right">
+                            <div class="social-profile">
+                                <span class="social-profole-title">Follow Us:</span>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa fa-heart"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div><!-- /.social-profile -->
+                        </div><!-- /.bottom-content-right -->
+                     </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.footer-bottom-block -->
+        </div><!-- /.container -->
+    </footer><!-- /.footer-block -->
+
+
+
+
+
+      
+    <!-- All The JS Files
+    ================================================== --> 
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/carrent.min.js"></script> <!-- main-js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
