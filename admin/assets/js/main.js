@@ -14,9 +14,11 @@ function busSideMenu($bus_id, $height){
 }
 
 // Image Upload Js code
-var btnUpload = $("#upload_file"),
+
+	var btnUpload = $("#upload_file"),
 		btnOuter = $(".button_outer");
 	btnUpload.on("change", function(e){
+		$('.uploaded_file_view').show();
 		var ext = btnUpload.val().split('.').pop().toLowerCase();
 		if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
 			$(".error_msg").text("Not an Image...");
@@ -33,8 +35,10 @@ var btnUpload = $("#upload_file"),
 		}
 	});
 	$(".file_remove").on("click", function(e){
+		$('.uploaded_file_view').hide();
 		$("#uploaded_view").removeClass("show");
 		$("#uploaded_view").find("img").remove();
 		btnOuter.removeClass("file_uploading");
 		btnOuter.removeClass("file_uploaded");
 	});
+

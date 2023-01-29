@@ -1,0 +1,21 @@
+
+
+*****Bus table Creation 
+CREATE TABLE bus_category( 
+	ID int AUTO_INCREMENT, 
+	B_name varchar(50) NOT null, 
+	B_img varchar(255), 
+	B_status int DEFAULT 1 COMMENT '0 for Deactive 1 for Active', 
+	PRIMARY KEY (ID) 
+); 
+
+
+
+******Train Table creation.......
+CREATE TABLE train_category( 
+    ID int AUTO_INCREMENT, 
+    train_name varchar(50) NOT null, 
+    train_img varchar(255), 
+    train_status int DEFAULT 1 COMMENT '0 for Deactive 1 for Active', 
+    PRIMARY KEY (ID) 
+);

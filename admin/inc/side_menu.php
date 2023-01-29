@@ -5,7 +5,7 @@
                     <a href="index.php"><i class="fa-solid fa-chart-line"></i><span>Deshboard</span></a>
                 </li>
                 <li class="mt-3">
-                    <a href="#" onclick="busSideMenu('bus_info', '100px')"><i class="fa-solid fa-bus"></i><span>Bus <i class="fa-solid fa-chevron-down"></i></span></a>
+                    <a href="#" onclick="busSideMenu('bus_info', '100px')"><i class="fa-solid fa-van-shuttle"></i></i><span>Bus <i class="fa-solid fa-chevron-down"></i></span></a>
                     <div class="bus_info" id="bus_info">
                         <ul>
                             <li><a href="bus_category.php"><i class="fa-solid fa-circle"></i> Bus Category</a></li>
@@ -18,7 +18,7 @@
                     <a href="#" onclick="busSideMenu('train_info', '100px')"><i class="fa-solid fa-train-subway"></i><span>Train <i class="fa-solid fa-chevron-down"></i></span></a>
                     <div class="bus_info" id="train_info">
                         <ul>
-                            <li><a href=""><i class="fa-solid fa-circle"></i> Train Name</a></li>
+                            <li><a href="train_category.php"><i class="fa-solid fa-circle"></i> Train Name</a></li>
                             <li><a href=""><i class="fa-solid fa-circle"></i> Train Stops</a></li>
                             <li><a href=""><i class="fa-solid fa-circle"></i> Add New Train</a></li>
                         </ul>
